@@ -190,6 +190,11 @@ br.mob-br {
   display: none;
 }
 
+/* Mobile-only text hider: visible on desktop, hidden on mobile */
+.mob-hide {
+  display: inline;
+}
+
 .slide-title {
   font-family: var(--font-serif);
   font-size: 3.5rem;
@@ -1189,6 +1194,11 @@ br.mob-br {
   /* Show mobile-only line breaks in long title labels */
   br.mob-br {
     display: inline;
+  }
+
+  /* Hide desktop-only text segments in title labels */
+  .mob-hide {
+    display: none;
   }
 
   /* Remove the decorative cyan dash from resort slide title labels on mobile */
