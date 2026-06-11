@@ -1252,6 +1252,46 @@ html, body {
   .gallery-caption {
     display: none;
   }
+
+  /* Slide 9 (comparison table): align to top so title is never cut off */
+  #slide-8 {
+    align-items: flex-start;
+    padding-top: 16px;
+  }
+
+  #slide-8 .slide-full {
+    justify-content: flex-start;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #slide-8 .slide-title {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+
+  #slide-8 .title-pre {
+    margin-bottom: 4px;
+  }
+
+  #slide-8 .comparison-dashboard {
+    gap: 12px;
+  }
+
+  #slide-8 .dashboard-filters {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  #slide-8 .filter-select {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  #slide-8 .table-wrapper {
+    min-height: 200px;
+  }
   
   .map-container {
     grid-template-columns: 1fr;
