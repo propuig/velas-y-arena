@@ -1244,6 +1244,11 @@ html, body {
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x pan-y;
   }
+
+  /* Hide image caption overlay on mobile */
+  .gallery-caption {
+    display: none;
+  }
   
   .map-container {
     grid-template-columns: 1fr;
