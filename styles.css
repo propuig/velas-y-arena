@@ -1175,7 +1175,7 @@ html, body {
     height: auto;
     max-height: calc(100vh - 220px);
     overflow-y: auto;
-    gap: 24px;
+    gap: 16px;
   }
   
   .sidebar {
@@ -1260,11 +1260,99 @@ html, body {
   .simulator-visual {
     min-height: 250px;
   }
+
+  /* ── Resort slides (4-8) mobile sizing ── */
+
+  /* Make slide-title smaller so it takes less vertical room */
+  .slide-grid .slide-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  /* Compress the description text so it fits in less height */
+  .slide-grid .slide-description {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    /* Show only 4 lines, let users scroll the slide-grid */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Override the inline white-space:nowrap that some slides use, so price badge wraps */
+  .slide-grid > div:first-child > div:first-child {
+    white-space: normal !important;
+    flex-wrap: wrap;
+  }
+
+  /* Reduce details-pane size */
+  .details-pane {
+    padding: 12px 14px;
+    margin-top: 10px;
+  }
+
+  .details-grid {
+    gap: 8px;
+  }
+
+  .detail-label {
+    font-size: 0.65rem;
+  }
+
+  .detail-value {
+    font-size: 0.82rem;
+  }
+
+  /* Reduce airport/negatives pane */
+  .airport-negatives-pane {
+    padding: 10px 12px;
+    margin-top: 8px;
+    gap: 6px;
+  }
+
+  .pane-title {
+    font-size: 0.7rem;
+  }
+
+  .pane-row {
+    gap: 10px;
+  }
+
+  .pane-item-label {
+    font-size: 0.6rem;
+  }
+
+  .pane-item-value {
+    font-size: 0.75rem;
+  }
+
+  /* Smaller location subtitle */
+  .slide-grid > div:first-child > div[style*="1.1rem"] {
+    font-size: 0.85rem !important;
+    margin-bottom: 10px !important;
+    margin-top: -10px !important;
+  }
+
+  /* Price tag — smaller on mobile */
+  .slide-grid > div:first-child > div:first-child span[style*="0.875rem"] {
+    font-size: 0.7rem !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  /* Gallery container: fix height so it always shows consistently */
+  .slide-grid .gallery-container {
+    height: 260px;
+    min-height: 260px;
+    max-height: 260px;
+    flex-shrink: 0;
+  }
 }
 
 @media (max-width: 768px) {
   .slide-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .title-slide h1 {
@@ -1272,12 +1360,13 @@ html, body {
   }
   
   .details-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   
   .gallery-container {
-    height: 300px;
-    min-height: 300px;
+    height: 240px;
+    min-height: 240px;
+    max-height: 240px;
   }
   
   .comparison-table {
@@ -1286,6 +1375,13 @@ html, body {
   
   .quiz-container {
     padding: 20px;
+  }
+
+  /* Subtitle font smaller on very small screens */
+  .slide-grid > div:first-child > div[style*="1.1rem"] {
+    font-size: 0.75rem !important;
+    margin-bottom: 8px !important;
+    margin-top: -8px !important;
   }
 }
 
