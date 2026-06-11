@@ -1266,22 +1266,22 @@ br.mob-br {
   }
   
   .controls-bar {
-    bottom: 98px;   /* clear above the 60px sidebar with comfortable gap */
+    bottom: 130px;
     right: 16px;
-    padding: 5px 12px;
-    gap: 10px;
-    border-radius: 30px;
+    padding: 8px 16px;
+    gap: 14px;
+    border-radius: 32px;
   }
 
   /* Shrink the arrow buttons inside the controls-bar on mobile */
   .controls-bar .control-btn {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
 
   .controls-bar .control-btn svg {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
   }
 
   /* Hide dot indicators and slide counter on mobile — only arrows remain */
