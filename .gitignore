@@ -2,3 +2,5 @@
 .tempmediaStorage/
 .DS_Store
 *.log
+
+.vercel
