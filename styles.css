@@ -1246,8 +1246,22 @@ br.mob-br {
   }
   
   .controls-bar {
-    bottom: 80px;
-    right: 20px;
+    bottom: 63px;   /* sidebar is 60px tall — sit just above it */
+    right: 16px;
+    padding: 5px 12px;
+    gap: 10px;
+    border-radius: 30px;
+  }
+
+  /* Shrink the arrow buttons inside the controls-bar on mobile */
+  .controls-bar .control-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .controls-bar .control-btn svg {
+    width: 14px;
+    height: 14px;
   }
 
   /* Hide dot indicators and slide counter on mobile — only arrows remain */
