@@ -709,6 +709,16 @@ br.mob-br {
   background: rgba(255, 255, 255, 0.05);
 }
 
+.control-btn:active:not(:disabled) {
+  color: var(--accent-cyan);
+  background: rgba(0, 240, 255, 0.15);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.control-btn {
+  -webkit-tap-highlight-color: transparent; /* Remove the square tap flash on mobile */
+}
+
 .control-btn:disabled {
   opacity: 0.3;
   cursor: not-allowed;
