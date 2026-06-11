@@ -94,23 +94,52 @@ function initSlides() {
   // Touch Swipe for Mobile Support
   let touchStartX = 0;
   let touchEndX = 0;
-  
+  let touchStartY = 0;
+  let touchEndY = 0;
+  let swipeLocked = false; // true when touch starts inside a scrollable/interactive area
+
+  // Elements where horizontal swipe should scroll content, not change slide
+  const swipeBlockSelectors = [
+    '.table-wrapper',
+    '.comparison-table',
+    '.quiz-container',
+    '.quiz-option',
+    '.quiz-options',
+    '.nav-links',
+    '.slide-grid',
+    '.filter-select',
+    'select',
+    'input',
+    'button'
+  ];
+
+  function isInsideScrollableOrInteractive(target) {
+    return swipeBlockSelectors.some(sel => target.closest(sel) !== null);
+  }
+
   document.addEventListener('touchstart', (e) => {
     touchStartX = e.changedTouches[0].screenX;
-  }, false);
-  
+    touchStartY = e.changedTouches[0].screenY;
+    swipeLocked = isInsideScrollableOrInteractive(e.target);
+  }, { passive: true });
+
   document.addEventListener('touchend', (e) => {
+    if (swipeLocked) return;
     touchEndX = e.changedTouches[0].screenX;
+    touchEndY = e.changedTouches[0].screenY;
     handleSwipe();
-  }, false);
-  
+  }, { passive: true });
+
   function handleSwipe() {
-    const threshold = 50;
-    if (touchEndX < touchStartX - threshold) {
+    const threshold = 60;
+    const dx = touchEndX - touchStartX;
+    const dy = touchEndY - touchStartY;
+    // Only treat as horizontal swipe if horizontal movement dominates
+    if (Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    if (dx < -threshold) {
       // Swipe Left -> Next Slide
       if (currentSlide < totalSlides - 1) goToSlide(currentSlide + 1);
-    }
-    if (touchEndX > touchStartX + threshold) {
+    } else if (dx > threshold) {
       // Swipe Right -> Prev Slide
       if (currentSlide > 0) goToSlide(currentSlide - 1);
     }
@@ -391,20 +420,27 @@ function initSailingQuiz() {
     }
   }
   
+  function handleOptionSelect(option) {
+    const stepEl = option.closest('.quiz-step');
+    const siblings = stepEl.querySelectorAll('.quiz-option');
+    siblings.forEach(s => s.classList.remove('selected'));
+    option.classList.add('selected');
+    const key = option.getAttribute('data-key');
+    const val = option.getAttribute('data-value');
+    answers[key] = val;
+    nextQuizBtn.disabled = false;
+  }
+
   optionElements.forEach(option => {
-    option.addEventListener('click', () => {
-      const stepEl = option.closest('.quiz-step');
-      const siblings = stepEl.querySelectorAll('.quiz-option');
-      siblings.forEach(s => s.classList.remove('selected'));
-      
-      option.classList.add('selected');
-      
-      const key = option.getAttribute('data-key');
-      const val = option.getAttribute('data-value');
-      answers[key] = val;
-      
-      nextQuizBtn.disabled = false;
+    // 'click' works on desktop; 'touchend' is needed on mobile
+    option.addEventListener('click', (e) => {
+      e.stopPropagation();
+      handleOptionSelect(option);
     });
+    option.addEventListener('touchend', (e) => {
+      e.stopPropagation();
+      handleOptionSelect(option);
+    }, { passive: true });
   });
   
   nextQuizBtn.addEventListener('click', () => {
