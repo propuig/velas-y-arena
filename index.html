@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velas y Arena: Los Mejores Resorts Todo Incluido para Navegar en la República Dominicana</title>
+  <meta name="description" content="Explore los principales resorts todo incluido en la República Dominicana que ofrecen navegación en catamarán Hobie Cat y Laser, instrucción y deportes acuáticos gratuitos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Presentation Container -->
+  <div class="deck-container">
+    
+    <!-- Background Elements -->
+    <div class="deck-bg"></div>
+    <svg class="ocean-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="rgba(0, 240, 255, 0.05)" d="M0,32L80,37.3C160,43,320,53,480,58.7C640,64,800,64,960,58.7C1120,53,1280,43,1360,37.3L1440,32L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path>
+      <path fill="rgba(14, 165, 233, 0.03)" d="M0,64L80,58.7C160,53,320,43,480,42.7C640,43,800,53,960,58.7C1120,64,1280,64,1360,64L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path>
+    </svg>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" aria-label="Slide navigation">
+      <div class="logo-container">
+        <svg class="logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 22V2l16 10L4 22z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M4 12h16" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span class="logo-text">Sails & Sand</span>
+      </div>
+
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" data-slide="0" id="nav-link-0" aria-label="Diapositiva de Portada">
+            <svg class="nav-link-icon" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3m10-11v11a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            <span class="nav-link-text">Introducción</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="1" id="nav-link-1" aria-label="Mapa de Regiones de Navegación">
+            <svg class="nav-link-icon" viewBox="0 0 24 24"><path d="M9 20L3 17V4l6 3m0 13l6-3m-6 3V7m6 10l6 3V7l-6-3m0 13V4M9 7l6-3"/></svg>
+            <span class="nav-link-text">Geografía Marina</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="2" id="nav-link-2" aria-label="Casa de Campo">
+            <svg class="nav-link-icon" viewBox="0 0 24 24"><path d="M3 21h18M3 7V5a2 2 0 012-2h14a2 2 0 012 2v2M5 21V7m14 14V7M9 11h6M9 15h6"/></svg>
+            <span class="nav-link-text">Casa de Campo</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="3" id="nav-link-3" aria-label="Bahia Principe Explore La Romana">
+            <svg class="nav-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+            <span class="nav-link-text">Bahia Principe Explore</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="4" id="nav-link-4" aria-label="Bahia Principe Grand El Portillo">
+            <svg class="nav-link-icon" viewBox="0 0 24 24"><path d="M12 2v20M5 12h14"/></svg>
+            <span class="nav-link-text">El Portillo Samaná</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="5" id="nav-link-5" aria-label="Viva Wyndham Tangerine">
+            <svg class="nav-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2M12.59 19.41A2 2 0 1 0 14 16H2M17.73 7.73A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+            <span class="nav-link-text">Viva Wyndham Tangerine</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="6" id="nav-link-6" aria-label="Club Med Punta Cana">
+            <svg class="nav-link-icon" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l7.5 13.5h-15L12 6z"/></svg>
+            <span class="nav-link-text">Club Med Punta Cana</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="7" id="nav-link-7" aria-label="Iberostar Waves Punta Cana">
+            <svg class="nav-link-icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span class="nav-link-text">Iberostar Waves Punta Cana</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="8" id="nav-link-8" aria-label="Comparativa de Resorts">
+            <svg class="nav-link-icon" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm3 6h12M6 14h12"/></svg>
+            <span class="nav-link-text">Comparativa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-slide="9" id="nav-link-9" aria-label="Planificador de Viaje">
+            <svg class="nav-link-icon" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            <span class="nav-link-text">Planificador</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <p>© 2026 Sails & Sand</p>
+      </div>
+    </nav>
+
+    <!-- Slides Wrapper -->
+    <main class="slides-wrapper" id="slides-wrapper">
+
+      <!-- SLIDE 1: TITLE SLIDE -->
+      <section class="slide active" id="slide-0" aria-labelledby="slide-0-title">
+        <div class="title-slide">
+          <div class="badge-group">
+            <span class="title-badge">República Dominicana</span>
+            <span class="title-badge">Todo Incluido</span>
+            <span class="title-badge">Navegación Gratuita</span>
+          </div>
+          <h1 id="slide-0-title">Sails & Sand</h1>
+          <p>Una revisión interactiva y premium de los mejores resorts todo incluido en la República Dominicana que ofrecen navegación en Hobie Cat e instrucción gratuita como parte de su experiencia.</p>
+          <div style="display: flex; justify-content: center; gap: 20px;">
+            <button class="btn btn-primary" onclick="document.getElementById('nav-link-1').click()" aria-label="Iniciar Exploración">Iniciar Exploración</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 2: SAILING GEOGRAPHY -->
+      <section class="slide future" id="slide-1" aria-labelledby="slide-1-title">
+        <div class="slide-full">
+          <div class="title-pre">Topografía y Vientos</div>
+          <h2 class="slide-title" id="slide-1-title">La Geografía de la <span>Vela en RD</span></h2>
+          
+          <div class="map-container">
+            <!-- Left Side: Interactive SVG Map of DR -->
+            <div class="interactive-map">
+              <svg class="map-svg" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Water Background Grid (subtle lines) -->
+                <defs>
+                  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+                    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+                
+                <!-- Dominican Republic Coastline Shape (Stylized Map Path) -->
+                <path d="M 50,150 C 60,110 90,120 120,110 C 150,100 180,110 210,120 C 230,125 250,115 270,110 C 290,105 310,120 330,120 C 350,120 370,105 385,100 C 400,95 410,105 430,105 C 440,105 450,110 460,115 C 470,120 480,110 490,115 C 500,120 510,135 520,140 C 530,145 540,155 545,160 C 550,165 545,175 540,180 C 535,185 525,180 515,185 C 505,190 495,195 485,200 C 475,205 460,205 450,210 C 435,215 420,225 405,225 C 390,225 380,215 365,215 C 350,215 340,220 325,220 C 310,220 300,210 285,210 C 270,210 255,225 240,225 C 225,225 210,215 195,215 C 180,215 170,225 155,225 C 140,225 130,220 115,220 C 100,220 90,230 75,230 C 60,230 55,215 50,200 C 45,185 40,170 50,150 Z" 
+                      fill="var(--bg-tertiary)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+                
+                <!-- Region Pins (Interactive) -->
+                <!-- Cabarete -->
+                <g class="map-pin" data-region="cabarete">
+                  <circle cx="260" cy="110" r="7"/>
+                  <text x="260" y="97" text-anchor="middle">Cabarete (Viva Tangerine)</text>
+                </g>
+                <!-- Samaná -->
+                <g class="map-pin" data-region="samana">
+                  <circle cx="385" cy="105" r="7"/>
+                  <text x="385" y="92" text-anchor="middle">Samaná (El Portillo)</text>
+                </g>
+                <!-- Punta Cana -->
+                <g class="map-pin selected" data-region="punta_cana">
+                  <circle cx="535" cy="165" r="7"/>
+                  <text x="535" y="152" text-anchor="middle">Punta Cana y Cap Cana</text>
+                </g>
+                <!-- La Romana -->
+                <g class="map-pin" data-region="la_romana">
+                  <circle cx="465" cy="205" r="7"/>
+                  <text x="465" y="222" text-anchor="middle">La Romana y Bayahibe</text>
+                </g>
+              </svg>
+            </div>
+            
+            <!-- Right Side: Details Card -->
+            <div class="map-detail-card">
+              <h3 id="region-title">Punta Cana y Cap Cana</h3>
+              <p class="slide-description" id="region-description">Cargando información de la región...</p>
+              <div id="region-conditions" style="font-size: 0.95rem; margin-bottom: 20px; color: var(--accent-cyan);"></div>
+              <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 10px;">Resorts Destacados:</h4>
+              <ul id="region-resorts" style="list-style-type: none; padding-left: 0;"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3: CASA DE CAMPO -->
+      <section class="slide future" id="slide-2" aria-labelledby="slide-2-title">
+        <div class="slide-grid">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+              <div class="title-pre" style="margin-bottom: 0;">01. Prestigio de Alto Nivel</div>
+              <span style="font-size: 0.875rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.25em; text-transform: uppercase;">$9,077 USD x 2 Habitaciones</span>
+            </div>
+            <div style="font-size: 0.72rem; font-weight: 500; color: var(--text-secondary); margin-top: -8px; margin-bottom: 16px; line-height: 1.4;">
+              <span style="color: var(--accent-gold);">*</span>Total sin comida/bebida. Con comida incluida, $18,923 (alimentos/bebidas/snacks + 1 comida/niño gratis por dia)
+            </div>
+            <h2 class="slide-title" id="slide-2-title">Casa de Campo <span>Resort</span></h2>
+            <div style="font-size: 1.1rem; font-weight: 500; color: var(--text-secondary); margin-top: -18px; margin-bottom: 20px; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--font-sans);">La Romana</div>
+            <p class="slide-description">Ofreciendo el máximo lujo en La Romana, Casa de Campo incluye vela en Hobie Cat y windsurf en la playa privada de Minitas. Con aguas caribeñas más tranquilas y protegidas del oleaje atlántico, ofrece un entorno de navegación muy relajado, perfecto para cruceros en solitario o para llevar a los niños en su primera navegación.</p>
+            
+            <div class="details-pane">
+              <div class="details-grid">
+                <div class="detail-item">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">La Romana</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Inclusiones</span>
+                  <span class="detail-value">Incluido en "Casa Inclusive"</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Estado del Mar</span>
+                  <span class="detail-value">Calmo y Cristalino</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Atmósfera</span>
+                  <span class="detail-value">Élite / Sofisticado</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="airport-negatives-pane">
+              <div class="pane-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Logística y Consideraciones
+              </div>
+              <div class="pane-row">
+                <div class="pane-item">
+                  <span class="pane-item-label">Distancia al Aeropuerto</span>
+                  <span class="pane-item-value">8 km (10 min) desde LRM; 1 hr desde SDQ</span>
+                </div>
+                <div class="pane-item">
+                  <span class="pane-item-label">Puntos a Considerar</span>
+                  <span class="pane-item-value negative">Propiedad inmensa que requiere coche de golf; playa Minitas es artificial y muy resguardada.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-container">
+            <div class="gallery-viewer">
+              <button id="casa-campo-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <img id="casa-campo-gallery-img" src="assets/casa_de_campo.png" alt="Casa de Campo Minitas Beach sailing" class="gallery-main-img">
+              <div class="gallery-caption" id="casa-campo-gallery-caption">Navegación: Alquiler de Hobie Cat y windsurf en la playa privada Minitas</div>
+              <button id="casa-campo-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+            </div>
+            <div class="gallery-tabs">
+              <button class="gallery-tab active" data-resort="casa-campo" data-img="assets/casa_de_campo.png" data-caption="Navegación: Alquiler de Hobie Cat y windsurf en la playa privada Minitas">Navegación</button>
+              <button class="gallery-tab" data-resort="casa-campo" data-img="assets/casa_de_campo_resort.png" data-caption="Resort: Marina con restaurantes frente al mar y arquitectura mediterránea">Instalaciones</button>
+              <button class="gallery-tab" data-resort="casa-campo" data-img="assets/cdc5.avif" data-caption="Habitaciónes · Suites de Lujo Premium">Habitaciones</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 4: BAHIA PRINCIPE EXPLORE LA ROMANA -->
+      <section class="slide future" id="slide-3" aria-labelledby="slide-3-title">
+        <div class="slide-grid">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px; white-space: nowrap;">
+              <div class="title-pre" style="margin-bottom: 0; flex-shrink: 0;">02. Exploración y Vela Activa</div>
+              <span style="font-size: 0.875rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.25em; text-transform: uppercase; flex-shrink: 0;">$5,000 USD x 2 Habitaciones</span>
+            </div>
+            <h2 class="slide-title" id="slide-3-title">Bahia Principe <span>Explore</span></h2>
+            <div style="font-size: 1.1rem; font-weight: 500; color: var(--text-secondary); margin-top: -18px; margin-bottom: 20px; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--font-sans);">La Romana</div>
+            <p class="slide-description">Ubicado en la tranquila costa caribeña de La Romana, este resort todo incluido destaca por su estrecha colaboración con el prestigioso centro de deportes acuáticos Seaklub. Los huéspedes disfrutan de una hora diaria gratuita de catamarán Hobie Cat y kayaks, navegando en aguas cristalinas y calmas bajo la supervisión de instructores certificados, ideal para principiantes y paseos tranquilos.</p>
+            
+            <div class="details-pane">
+              <div class="details-grid">
+                <div class="detail-item">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">Bahía de La Romana</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Público Objetivo</span>
+                  <span class="detail-value">Familias y Parejas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Lanzamiento</span>
+                  <span class="detail-value">Playa de arena suave y aguas calmas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Atmósfera</span>
+                  <span class="detail-value">Relajada, Activa y Familiar</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="airport-negatives-pane">
+              <div class="pane-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Logística y Consideraciones
+              </div>
+              <div class="pane-row">
+                <div class="pane-item">
+                  <span class="pane-item-label">Distancia al Aeropuerto</span>
+                  <span class="pane-item-value">35 km (30 min) desde LRM; 1 hr desde SDQ</span>
+                </div>
+                <div class="pane-item">
+                  <span class="pane-item-label">Puntos a Considerar</span>
+                  <span class="pane-item-value negative">Arena ligeramente más oscura y gruesa; vientos por la tarde son sumamente suaves, lo que limita la navegación rápida.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-container">
+            <div class="gallery-viewer">
+              <button id="bahia-romana-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <img id="bahia-romana-gallery-img" src="assets/seaklub_romana.webp" alt="Bahia Principe Explore La Romana sailing" class="gallery-main-img">
+              <div class="gallery-caption" id="bahia-romana-gallery-caption">Navegación: Centro Seaklub con acceso gratuito a Hobie Cats en playa</div>
+              <button id="bahia-romana-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+            </div>
+            <div class="gallery-tabs">
+              <button class="gallery-tab active" data-resort="bahia-romana" data-img="assets/seaklub_romana.webp" data-caption="Navegación: Centro Seaklub con acceso gratuito a Hobie Cats en playa">Navegación</button>
+              <button class="gallery-tab" data-resort="bahia-romana" data-img="assets/romanaview.jpg" data-caption="Resort: Amplia piscina y hermosos jardines frente al mar de La Romana">Instalaciones</button>
+              <button class="gallery-tab" data-resort="bahia-romana" data-img="assets/laromanabahia1.avif" data-caption="Habitaciónes · Suites de Lujo Premium">Habitaciones</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 5: BAHIA PRINCIPE GRAND EL PORTILLO -->
+      <section class="slide future" id="slide-4" aria-labelledby="slide-4-title">
+        <div class="slide-grid">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px; white-space: nowrap;">
+              <div class="title-pre" style="margin-bottom: 0; flex-shrink: 0;">03. Paraíso del Viento Fuerte</div>
+              <span style="font-size: 0.875rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.25em; text-transform: uppercase; flex-shrink: 0;">$6,400 USD x 2 Habitaciones</span>
+            </div>
+            <h2 class="slide-title" id="slide-4-title">Bahia Principe <span>El Portillo</span></h2>
+            <div style="font-size: 1.1rem; font-weight: 500; color: var(--text-secondary); margin-top: -18px; margin-bottom: 20px; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--font-sans);">Samaná</div>
+            <p class="slide-description">Ubicado en Las Terrenas en la península de Samaná, El Portillo disfruta de constantes vientos alisios del Atlántico que lo convierten en un emocionante campo de juego para navegantes intermedios y avanzados. El alquiler de catamaranes es gratuito durante una hora al día bajo el paquete todo incluido, lo que le permite levantar un casco sobre una impresionante bahía de arena dorada.</p>
+            
+            <div class="details-pane">
+              <div class="details-grid">
+                <div class="detail-item">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">Península de Samaná</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Flota de Vela</span>
+                  <span class="detail-value">Hobie Cat Wave</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Viento</span>
+                  <span class="detail-value">Fuerte (12-20 nudos)</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Atmósfera</span>
+                  <span class="detail-value">Activa / Paisajística</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="airport-negatives-pane">
+              <div class="pane-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Logística y Consideraciones
+              </div>
+              <div class="pane-row">
+                <div class="pane-item">
+                  <span class="pane-item-label">Distancia al Aeropuerto</span>
+                  <span class="pane-item-value">40 km (45 min) desde AZS; 2.5 hrs desde SDQ</span>
+                </div>
+                <div class="pane-item">
+                  <span class="pane-item-label">Puntos a Considerar</span>
+                  <span class="pane-item-value negative">Traslado largo desde aeropuertos principales; vientos y olas fuertes pueden retar a principiantes.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-container">
+            <div class="gallery-viewer">
+              <button id="el-portillo-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <button id="el-portillo-mejor-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <img id="el-portillo-gallery-img" src="assets/catamaran2.jpg" alt="Bahia Principe Grand El Portillo sailing" class="gallery-main-img">
+              <div class="gallery-caption" id="el-portillo-gallery-caption">Navegación: Imagen 1 de 6 · Equipos de navegación</div>
+              <button id="el-portillo-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+              <button id="el-portillo-mejor-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+            </div>
+            <div class="gallery-tabs">
+              <button class="gallery-tab active" data-resort="el-portillo" data-img="assets/catamaran2.jpg" data-caption="Navegación: Imagen 1 de 6 · Equipos de navegación">Navegación</button>
+              <button class="gallery-tab" data-resort="el-portillo" data-img="assets/portillobeach.jpg" data-caption="Resort: Impresionante piscina de laguna rodeada de cocoteros">Instalaciones</button>
+              <button class="gallery-tab" id="el-portillo-mejor-tab" data-resort="el-portillo" data-img="assets/portillohab.avif" data-caption="Habitaciónes · Suites de Lujo Premium">Habitaciones</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 6: VIVA WYNDHAM TANGERINE -->
+      <section class="slide future" id="slide-5" aria-labelledby="slide-5-title">
+        <div class="slide-grid">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px; white-space: nowrap;">
+              <div class="title-pre" style="margin-bottom: 0; flex-shrink: 0;">04. Centro de Viento y Olas</div>
+              <span style="font-size: 0.875rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.25em; text-transform: uppercase; flex-shrink: 0;">$4,000 USD x 2 Habitaciones</span>
+            </div>
+            <h2 class="slide-title" id="slide-5-title">Viva Wyndham <span>Tangerine</span></h2>
+            <div style="font-size: 1.1rem; font-weight: 500; color: var(--text-secondary); margin-top: -18px; margin-bottom: 20px; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--font-sans);">Cabarete</div>
+            <p class="slide-description">Ubicado en la vibrante playa de la bahía de Cabarete, Viva Wyndham Tangerine es el centro definitivo para la vela, el kitesurf y los deportes acuáticos activos. Bajo el paquete todo incluido, los huéspedes dejan de lado las preocupaciones y disfrutan de acceso ilimitado a la flota profesional de catamaranes Hobie Cat, zarpando directamente hacia los mundialmente famosos vientos alisios del Caribe.</p>
+            
+            <div class="details-pane">
+              <div class="details-grid">
+                <div class="detail-item">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">Cabarete, Puerto Plata</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Flota de Vela</span>
+                  <span class="detail-value">Hobie Cat and Kayaks</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Viento</span>
+                  <span class="detail-value">Constante y Fuerte (15-22 nudos)</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Atmósfera</span>
+                  <span class="detail-value">Activa / Alta Energía</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="airport-negatives-pane">
+              <div class="pane-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Logística y Consideraciones
+              </div>
+              <div class="pane-row">
+                <div class="pane-item">
+                  <span class="pane-item-label">Distancia al Aeropuerto</span>
+                  <span class="pane-item-value">20 km (20-25 minutos) desde POP</span>
+                </div>
+                <div class="pane-item">
+                  <span class="pane-item-label">Puntos a Considerar</span>
+                  <span class="pane-item-value negative">Infraestructura y habitaciones más sencillas; oleaje de tarde puede asustar a navegantes principiantes.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-container">
+            <div class="gallery-viewer">
+              <button id="viva-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <button id="viva-inst-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <button id="viva-mejor-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <img id="viva-gallery-img" src="assets/wyndhamcabaretesailing.jpg" alt="Viva Wyndham Tangerine sailing fleet" class="gallery-main-img">
+              <div class="gallery-caption" id="viva-gallery-caption">Navegación: Imagen 1 de 3 · Acceso gratuito a Hobie Cats y kayaks</div>
+              <button id="viva-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+              <button id="viva-inst-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+              <button id="viva-mejor-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+            </div>
+            <div class="gallery-tabs">
+              <button class="gallery-tab active" data-resort="viva" data-img="assets/wyndhamcabaretesailing.jpg" data-caption="Navegación: Imagen 1 de 3 · Acceso gratuito a Hobie Cats y kayaks">Navegación</button>
+              <button class="gallery-tab" id="viva-inst-tab" data-resort="viva" data-img="assets/wyndhamcabaretehotel.jpg" data-caption="Resort: Imagen 1 de 2 · Vista del hotel y jardines tropicales en la playa">Instalaciones</button>
+              <button class="gallery-tab" id="viva-mejor-tab" data-resort="viva" data-img="assets/wyndy1.avif" data-caption="Mejor Opción: Imagen 1 de 5 · Habitación moderna con vistas al mar">Habitaciones</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 7: CLUB MED PUNTA CANA -->
+      <section class="slide future" id="slide-6" aria-labelledby="slide-6-title">
+        <div class="slide-grid">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px; white-space: nowrap;">
+              <div class="title-pre" style="margin-bottom: 0; flex-shrink: 0;">05. Instrucción Suprema</div>
+              <span style="font-size: 0.875rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.25em; text-transform: uppercase; flex-shrink: 0;">$8,400 USD x 2 Habitaciones</span>
+            </div>
+            <h2 class="slide-title" id="slide-6-title">Club Med <span>Punta Cana</span></h2>
+            <div style="font-size: 1.1rem; font-weight: 500; color: var(--text-secondary); margin-top: -18px; margin-bottom: 20px; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--font-sans);">Punta Cana</div>
+            <p class="slide-description">El estándar de oro para la navegación en resorts todo incluido. Club Med cuenta con una Academia de Vela dedicada con clases grupales estructuradas y gratuitas dirigidas por instructores profesionales G.O. Aprenderá el manejo de cabos, viradas, trasluchadas y trimado de velas en una flota de catamaranes Hobie Cat y monocascos Laser.</p>
+            
+            <div class="details-pane">
+              <div class="details-grid">
+                <div class="detail-item">
+                  <span class="detail-label">Clases Incluidas</span>
+                  <span class="detail-value">Sí, <span>Gratuitas</span></span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Flota de Vela</span>
+                  <span class="detail-value">Hobie Cats y Lasers</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Viento</span>
+                  <span class="detail-value">Constante (10-15 nudos)</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Atmósfera</span>
+                  <span class="detail-value">Activa y Deportiva</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="airport-negatives-pane">
+              <div class="pane-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Logística y Consideraciones
+              </div>
+              <div class="pane-row">
+                <div class="pane-item">
+                  <span class="pane-item-label">Distancia al Aeropuerto</span>
+                  <span class="pane-item-value">3.5 km (5-10 minutos) desde PUJ</span>
+                </div>
+                <div class="pane-item">
+                  <span class="pane-item-label">Puntos a Considerar</span>
+                  <span class="pane-item-value negative">Sobre desarrollado; posible ruido de aviones despegando al estar tan cerca de las pistas.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-container">
+            <div class="gallery-viewer">
+              <button id="club-med-nav-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <button id="club-med-mejor-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <img id="club-med-gallery-img" src="assets/clubmedsailing3.jpg" alt="Club Med Punta Cana Sailing School" class="gallery-main-img">
+              <div class="gallery-caption" id="club-med-gallery-caption">Navegación: Imagen 1 de 6</div>
+              <button id="club-med-nav-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+              <button id="club-med-mejor-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+            </div>
+            <div class="gallery-tabs">
+              <button class="gallery-tab active" data-resort="club-med" data-img="assets/clubmedsailing3.jpg" data-caption="Navegación: Imagen 1 de 6">Navegación</button>
+              <button class="gallery-tab" data-resort="club-med" data-img="assets/club_med_resort.jpg" data-caption="Resort: Piscina principal tipo laguna, jardines de playa y deportes activos">Instalaciones</button>
+              <button class="gallery-tab" id="club-med-mejor-tab" data-resort="club-med" data-img="assets/cmpc.webp" data-caption="Habitaciones: Imagen 1 de 4 · Habitación con diseño tropical moderno">Habitaciones</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 8: IBEROSTAR WAVES PUNTA CANA -->
+      <section class="slide future" id="slide-7" aria-labelledby="slide-7-title">
+        <div class="slide-grid">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px; white-space: nowrap;">
+              <div class="title-pre" style="margin-bottom: 0; flex-shrink: 0;">06. Diversión y Vela Familiar</div>
+              <span style="font-size: 0.875rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.25em; text-transform: uppercase; flex-shrink: 0;">$7,250 USD x 2 Habitaciones</span>
+            </div>
+            <h2 class="slide-title" id="slide-7-title">Iberostar <span>Waves</span></h2>
+            <div style="font-size: 1.1rem; font-weight: 500; color: var(--text-secondary); margin-top: -18px; margin-bottom: 20px; letter-spacing: 0.18em; text-transform: uppercase; font-family: var(--font-sans);">Punta Cana</div>
+            <p class="slide-description">Ubicado en las arenas doradas de la famosa playa de Bávaro, Iberostar Waves Punta Cana es un resort de ambiente familiar y muy activo. Los huéspedes disfrutan de 1 hora diaria de navegación gratuita en catamarán Hobie Cat. Es ideal para que padres e hijos se inicien en la navegación en aguas caribeñas y brisas constantes, asistidos por el personal de playa.</p>
+            
+            <div class="details-pane">
+              <div class="details-grid">
+                <div class="detail-item">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">Playa de Bávaro, Punta Cana</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Público Objetivo</span>
+                  <span class="detail-value">Familias y Parejas</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Lanzamiento</span>
+                  <span class="detail-value">Desde la playa con asistencia</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Atmósfera</span>
+                  <span class="detail-value">Activa, Alegre y Familiar</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="airport-negatives-pane">
+              <div class="pane-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Logística y Consideraciones
+              </div>
+              <div class="pane-row">
+                <div class="pane-item">
+                  <span class="pane-item-label">Distancia al Aeropuerto</span>
+                  <span class="pane-item-value">25 km (25-30 minutos) desde PUJ</span>
+                </div>
+                <div class="pane-item">
+                  <span class="pane-item-label">Puntos a Considerar</span>
+                  <span class="pane-item-value negative">Complejo muy concurrido; playa con vendedores locales y posible presencia estacional de sargazo.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-container">
+            <div class="gallery-viewer">
+              <button id="iberostar-mejor-prev-arrow" class="gallery-arrow-btn left-arrow" aria-label="Imagen Anterior" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+              </button>
+              <img id="iberostar-gallery-img" src="assets/iberostarwaves.jpg" alt="Iberostar Waves Punta Cana beachfront sailing" class="gallery-main-img">
+              <div class="gallery-caption" id="iberostar-gallery-caption">Navegación: Gratuita en Hobie Cat asistida por el equipo de playa</div>
+              <button id="iberostar-mejor-next-arrow" class="gallery-arrow-btn right-arrow" aria-label="Imagen Siguiente" style="display: none;">
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+              </button>
+            </div>
+            <div class="gallery-tabs">
+              <button class="gallery-tab active" data-resort="iberostar" data-img="assets/iberostarwaves.jpg" data-caption="Navegación: Gratuita en Hobie Cat asistida por el equipo de playa">Navegación</button>
+              <button class="gallery-tab" data-resort="iberostar" data-img="assets/iberostar-punta-cana-aerial-exterior.jpg" data-caption="Resort: Piscinas frente al mar, amplios jardines y actividades de Star Camp">Instalaciones</button>
+              <button class="gallery-tab" id="iberostar-mejor-tab" data-resort="iberostar" data-img="assets/waves7.avif" data-caption="Habitaciones: Imagen 1 de 7 · Habitación Familiar de Iberostar Waves">Habitaciones</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 9: RESORT COMPARISON DASHBOARD -->
+      <section class="slide future" id="slide-8" aria-labelledby="slide-8-title">
+        <div class="slide-full">
+          <div class="title-pre">Base de Datos</div>
+          <h2 class="slide-title" id="slide-8-title">Comparativa de <span>Resorts y Servicios</span></h2>
+          
+          <div class="comparison-dashboard">
+            <!-- Filter controls -->
+            <div class="dashboard-filters">
+              <label for="filter-location" style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">Región:</label>
+              <select id="filter-location" class="filter-select">
+                <option value="all">Todas las Regiones</option>
+                <option value="punta_cana">Punta Cana / Cap Cana</option>
+                <option value="la_romana">La Romana</option>
+                <option value="samana">Samaná</option>
+                <option value="cabarete">Cabarete (Costa Norte)</option>
+              </select>
+              
+              <label for="filter-skill" style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-left: 15px;">Nivel de Experiencia:</label>
+              <select id="filter-skill" class="filter-select">
+                <option value="all">Todos los Niveles</option>
+                <option value="beginner">Principiantes (Clases / Agua Calma)</option>
+                <option value="advanced">Experimentados (Viento Fuerte / Olas)</option>
+              </select>
+            </div>
+            
+            <!-- Comparison Table -->
+            <div class="table-wrapper">
+              <table class="comparison-table" id="comparison-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Resort y Ubicación</th>
+                    <th scope="col">Tipo de Huésped</th>
+                    <th scope="col">Detalles de Vela</th>
+                    <th scope="col">Costo de Clases</th>
+                    <th scope="col">Dificultad</th>
+                    <th scope="col">Atmósfera</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Filled dynamically by JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 10: SAILING ADVISOR QUIZ -->
+      <section class="slide future" id="slide-9" aria-labelledby="slide-9-title">
+        <div class="slide-full">
+          <div class="title-pre">Asistente de Viaje</div>
+          <h2 class="slide-title" id="slide-9-title">Asesor de <span>Resorts de Vela</span></h2>
+          
+          <div class="quiz-container">
+            <div class="quiz-progress-bar"></div>
+            
+            <!-- Step 1: Vibe / Luxury preference -->
+            <div class="quiz-step active" id="quiz-step-0">
+              <h3 class="quiz-title">¿Cuál es su atmósfera ideal de vacaciones?</h3>
+              <div class="quiz-options">
+                <div class="quiz-option" data-key="vibe" data-value="active" role="button" tabindex="0">
+                  <div class="quiz-option-radio"></div>
+                  <span class="quiz-option-text">Activa y Deportiva - Quiero aprender a navegar y hacer deportes acuáticos.</span>
+                </div>
+                <div class="quiz-option" data-key="vibe" data-value="luxury" role="button" tabindex="0">
+                  <div class="quiz-option-radio"></div>
+                  <span class="quiz-option-text">Lujo Exclusivo - Alta cocina, golf y playas tranquilas de primer nivel.</span>
+                </div>
+                <div class="quiz-option" data-key="vibe" data-value="romance" role="button" tabindex="0">
+                  <div class="quiz-option-radio"></div>
+                  <span class="quiz-option-text">Solo Adultos y Romance - Navegación al atardecer y relajación en pareja.</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 2: Sailing Experience -->
+            <div class="quiz-step" id="quiz-step-1">
+              <h3 class="quiz-title">¿Cuál es su nivel de experiencia navegando?</h3>
+              <div class="quiz-options">
+                <div class="quiz-option" data-key="experience" data-value="beginner" role="button" tabindex="0">
+                  <div class="quiz-option-radio"></div>
+                  <span class="quiz-option-text">Principiante - Necesito clases o prefiero navegar en lagunas tranquilas.</span>
+                </div>
+                <div class="quiz-option" data-key="experience" data-value="intermediate" role="button" tabindex="0">
+                  <div class="quiz-option-radio"></div>
+                  <span class="quiz-option-text">Intermedio - Puedo timonear un Hobie Cat con brisa suave a moderada.</span>
+                </div>
+                <div class="quiz-option" data-key="experience" data-value="advanced" role="button" tabindex="0">
+                  <div class="quiz-option-radio"></div>
+                  <span class="quiz-option-text">Avanzado - Quiero vientos alisios fuertes, oleaje y velocidad.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Guests -->
+            <div class="quiz-step" id="quiz-step-2">
+              <h3 class="quiz-title">¿Con quién viaja?</h3>
+              <div class="quiz-options">
+                <div class="quiz-option" data-key="guests" data-value="family" role="button" tabindex="0">
+                  <div class="quiz-option-radio"></div>
+                  <span class="quiz-option-text">Familia / Grupo - Viajo con niños o familia multigeneracional.</span>
+                </div>
+                <div class="quiz-option" data-key="guests" data-value="adults" role="button" tabindex="0">
+                  <div class="quiz-option-radio"></div>
+                  <span class="quiz-option-text">Parejas / Solo - Prefiero serenidad solo para adultos.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Results -->
+            <div class="quiz-step" id="quiz-step-3">
+              <div class="quiz-result">
+                <div class="result-tag">Su Resort Ideal:</div>
+                <h3 class="result-resort-title" id="match-title">Calculando su resort ideal...</h3>
+                <div class="result-card">
+                  <p class="result-text" id="match-desc">Procesando su perfil de navegación...</p>
+                  <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 15px;">
+                     <strong>Vela Incluida:</strong> <span id="match-inclusions" style="color: var(--accent-cyan);"></span>
+                  </div>
+                  <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 5px;">
+                     <strong>Atmósfera y Ubicación:</strong> <span id="match-atmosphere" style="color: var(--text-primary);"></span>
+                  </div>
+                </div>
+                <button class="btn btn-primary" id="quiz-restart" aria-label="Volver a hacer el test">Volver a realizar el test</button>
+              </div>
+            </div>
+            
+            <!-- Quiz Navigation -->
+            <div class="quiz-navigation">
+              <button class="btn btn-outline" id="quiz-prev" aria-label="Pregunta Anterior">Atrás</button>
+              <button class="btn btn-primary" id="quiz-next" disabled aria-label="Siguiente Pregunta">Siguiente Pregunta</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <!-- Slide Deck Controls (Bottom Bar) -->
+    <div class="controls-bar">
+      <button class="control-btn" id="prev-slide" disabled aria-label="Diapositiva Anterior">
+        <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      
+      <div class="slide-indicators" id="indicators">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+      
+      <span class="slide-number" id="slide-num">1 / 10</span>
+      
+      <button class="control-btn" id="next-slide" aria-label="Diapositiva Siguiente">
+        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
