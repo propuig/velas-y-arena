@@ -1391,8 +1391,50 @@ html, body {
     min-width: 750px;
   }
   
+  /* Quiz slide: make the slide-full container scrollable so the nav button is always reachable */
+  #slide-9 .slide-full {
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    justify-content: flex-start;
+    padding-bottom: 16px;
+  }
+
   .quiz-container {
-    padding: 20px;
+    padding: 20px 16px;
+    overflow: visible; /* Don't clip the navigation buttons */
+  }
+
+  .quiz-title {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+
+  .quiz-options {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .quiz-option {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .quiz-option-text {
+    font-size: 0.85rem;
+  }
+
+  .quiz-navigation {
+    margin-top: 16px;
+    padding-bottom: 8px;
+  }
+
+  .result-resort-title {
+    font-size: 1.4rem;
+  }
+
+  .result-card {
+    padding: 16px;
+    margin: 12px 0;
   }
 
   /* Subtitle font smaller on very small screens */
