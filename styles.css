@@ -185,6 +185,11 @@ html, body {
   background: var(--accent-cyan);
 }
 
+/* Mobile-only line-break helper: hidden on desktop, block on mobile */
+br.mob-br {
+  display: none;
+}
+
 .slide-title {
   font-family: var(--font-serif);
   font-size: 3.5rem;
@@ -1169,6 +1174,16 @@ html, body {
   .slide {
     padding: 20px 20px 140px 20px; /* Leave space at bottom for controls bar and sidebar */
     overflow-x: hidden; /* Prevent any child element from causing horizontal scroll */
+  }
+
+  /* Show mobile-only line breaks in long title labels */
+  br.mob-br {
+    display: inline;
+  }
+
+  /* Remove the decorative cyan dash from resort slide title labels on mobile */
+  .slide-grid .title-pre::after {
+    display: none;
   }
   
   .slide-grid {
