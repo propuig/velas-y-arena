@@ -1246,7 +1246,7 @@ br.mob-br {
   }
   
   .controls-bar {
-    bottom: 63px;   /* sidebar is 60px tall — sit just above it */
+    bottom: 98px;   /* clear above the 60px sidebar with comfortable gap */
     right: 16px;
     padding: 5px 12px;
     gap: 10px;
