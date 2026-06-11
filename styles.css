@@ -1168,6 +1168,7 @@ html, body {
 @media (max-width: 1024px) {
   .slide {
     padding: 20px 20px 140px 20px; /* Leave space at bottom for controls bar and sidebar */
+    overflow-x: hidden; /* Prevent any child element from causing horizontal scroll */
   }
   
   .slide-grid {
@@ -1175,6 +1176,8 @@ html, body {
     height: auto;
     max-height: calc(100vh - 220px);
     overflow-y: auto;
+    overflow-x: hidden; /* Lock out horizontal scroll — only vertical scrolling allowed */
+    touch-action: pan-y; /* Tell the browser only vertical panning is expected here */
     gap: 16px;
   }
   
